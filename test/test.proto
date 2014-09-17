@@ -1,0 +1,10 @@
+message TestRequest {
+	required int32 request = 1;
+}
+message TestResponse {
+	required int32 response = 1;
+}
+
+service TestRPC {
+   rpc status (TestRequest) returns(TestResponse);
+}
